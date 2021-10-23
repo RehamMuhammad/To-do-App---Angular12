@@ -1,0 +1,8 @@
+<form>
+    <div class="mb-3">
+        <h1>To-Do App!</h1>
+      <label for="todo" class="form-label">Add New To-do</label>
+      <input type="text" class="form-control" id="todo" aria-describedby="emailHelp" name="todo" placeholder="Enter New Task" #todoItem>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="selectTodoItem({name:todoItem.value,done:false})">Add</button>
+  </form>

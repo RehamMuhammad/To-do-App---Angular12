@@ -1,0 +1,7 @@
+.item-default {
+    text-decoration: none;
+}
+
+.item-complete {
+    text-decoration: line-through;
+}

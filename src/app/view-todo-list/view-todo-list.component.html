@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+      <ul>
+        <li class="col-12 my-4" *ngFor="let item of todoItems; index as i" [ngStyle]="{'text-decoration':item.done? 'line-through' : 'none'}" >{{ item.name }}
+            <button  class="btn btn-danger me-3" [id]="i" (click)="deleteItem(i)">Delete</button>
+            <button class="btn btn-success" (click)="completeItem($event.target,i)">Complete</button>
+
+        </li>
+      </ul>
+  </div>
+</div>
