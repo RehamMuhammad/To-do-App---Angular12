@@ -22,7 +22,7 @@ export class ViewTodoListComponent implements OnInit {
   }
 
   deleteItem(i :any){
-    this.todoItems.splice(this.todoItems.indexOf(5),1)
+    this.todoItems.splice(this.todoItems.indexOf(i),1)
     console.log(this.todoItems)
   }
 
